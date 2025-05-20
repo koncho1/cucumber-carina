@@ -1,0 +1,46 @@
+[2025-05-20 01:12:02] [3] [WARN] Reporting disabled: using no op test run registrar
+[2025-05-20 01:12:02] [3] [INFO] TEST [untitled - login] STARTED at [15:12:02 2025-05-20]
+[2025-05-20 01:12:02] [3] [INFO] Starting driver session...
+[2025-05-20 01:12:02] [3] [ERROR] TEST [untitled - login] FAILED at [15:12:02 2025-05-20] - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DESKTOP-LC4E5UV', ip: '26.111.246.91'
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--test-type, --start-maximized, --ignore-ssl-errors], extensions: []}}}]
+Capabilities {}
+
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+com.zebrunner.carina.webdriver.core.factory.impl.DesktopFactory.create(DesktopFactory.java:85)
+com.zebrunner.carina.webdriver.core.factory.DriverFactory.create(DriverFactory.java:87)
+com.zebrunner.carina.webdriver.IDriverPool.createDriver(IDriverPool.java:364)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:117)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:80)
+com.zebrunner.carina.webdriver.IDriverPool.getDriver(IDriverPool.java:68)
+org.example.carina.demo.HelloWorld.login(HelloWorld.java:25)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

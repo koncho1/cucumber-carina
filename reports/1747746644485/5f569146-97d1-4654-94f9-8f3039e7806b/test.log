@@ -1,0 +1,60 @@
+[2025-05-20 01:10:45] [3] [WARN] Reporting disabled: using no op test run registrar
+[2025-05-20 01:10:45] [3] [INFO] TEST [untitled - login] STARTED at [15:10:45 2025-05-20]
+[2025-05-20 01:10:45] [3] [INFO] Starting driver session...
+[2025-05-20 01:10:46] [3] [INFO] Driver session started.
+[2025-05-20 01:11:04] [3] [ERROR] Undefined error on capture screenshot detected!
+[2025-05-20 01:11:04] [3] [ERROR] Failure detected on screenshot generation after failure: 
+[2025-05-20 01:11:04] [3] [ERROR] TEST [untitled - login] FAILED at [15:11:04 2025-05-20] - Error communicating with the remote browser. It may have died.
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [271173a1be97dc89181e805ea8948f2a, findElement {using=xpath, value=//div[contains(@class,'login_logo')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\HONKHO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://26.111.246.91:4444/ses..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 271173a1be97dc89181e805ea8948f2a
+
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)
+org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$UNWk8IyI.findElement(Unknown Source)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1411)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1405)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.waitUntil(ExtendedWebElement.java:273)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isElementPresent(ExtendedWebElement.java:813)
+com.zebrunner.carina.webdriver.gui.AbstractPage.isPageOpened(AbstractPage.java:81)
+com.zebrunner.carina.webdriver.gui.AbstractPage.isPageOpened(AbstractPage.java:70)
+org.example.carina.demo.HelloWorld.login(HelloWorld.java:26)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

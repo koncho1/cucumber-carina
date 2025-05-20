@@ -1,0 +1,6 @@
+[2025-05-20 01:14:17] [3] [WARN] Reporting disabled: using no op test run registrar
+[2025-05-20 01:14:17] [3] [INFO] TEST [untitled - login] STARTED at [15:14:17 2025-05-20]
+[2025-05-20 01:14:17] [3] [INFO] Starting driver session...
+[2025-05-20 01:14:18] [3] [INFO] Driver session started.
+[2025-05-20 01:14:18] [3] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2025-05-20 01:14:18] [3] [INFO] TEST [untitled - login] PASSED at [15:14:18 2025-05-20]
