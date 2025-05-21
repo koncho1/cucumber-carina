@@ -1,0 +1,82 @@
+[2025-05-21 12:30:36] [3] [WARN] Reporting disabled: using no op test run registrar
+[2025-05-21 12:30:36] [3] [INFO] TEST [cucumber-carina - login] STARTED at [14:30:36 2025-05-21]
+[2025-05-21 12:30:36] [3] [INFO] Starting driver session...
+[2025-05-21 12:30:39] [3] [INFO] Driver session started.
+[2025-05-21 12:30:39] [3] [INFO] INFO: opening url 'https://www.saucedemo.com/'
+[2025-05-21 12:30:39] [3] [INFO] PASS: keys 'standard_user' are sent to element 'loginInput'.
+[2025-05-21 12:30:39] [3] [INFO] PASS: keys 'secret_sauce' are sent to element 'passwordInput'.
+[2025-05-21 12:30:40] [3] [INFO] PASS: element 'loginButton' is clicked.
+[2025-05-21 12:30:40] [3] [INFO] PASS: element 'addToCartButton' is clicked.
+[2025-05-21 12:30:40] [3] [INFO] PASS: element 'addToCartButton' is clicked.
+[2025-05-21 12:30:41] [3] [INFO] PASS: element 'addToCartButton' is clicked.
+[2025-05-21 12:30:41] [3] [INFO] PASS: element 'addToCartButton' is clicked.
+[2025-05-21 12:30:42] [3] [INFO] PASS: element 'addToCartButton' is clicked.
+[2025-05-21 12:30:42] [3] [INFO] PASS: element 'addToCartButton' is clicked.
+[2025-05-21 12:30:47] [3] [ERROR] Undefined error on capture screenshot detected!
+[2025-05-21 12:30:47] [3] [ERROR] Failure detected on screenshot generation after failure: 
+[2025-05-21 12:30:47] [3] [ERROR] TEST [cucumber-carina - login] FAILED at [14:30:47 2025-05-21] - Tried to run command without establishing a connection
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [bcfdafb8-5a1c-4573-8950-ce9a6179f1e2, findElement {using=xpath, value=//button[contains(@id,'add-to-cart')]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Users\Honk Honk\.cache\s..., profile: UEsDBBQACAgIANJztVoAAAAAAAA...}, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2792, moz:profile: C:\Users\HONKHO~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: bcfdafb8-5a1c-4573-8950-ce9a6179f1e2
+
+java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$AXsphONw.findElement(Unknown Source)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1411)
+org.openqa.selenium.support.ui.ExpectedConditions$49.apply(ExpectedConditions.java:1405)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.waitUntil(ExtendedWebElement.java:273)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1495)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1487)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:416)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:406)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:397)
+org.example.carina.demo.gui.components.ProductListItemComponent.addItemToCart(ProductListItemComponent.java:21)
+org.example.carina.demo.gui.pages.ProductListPage.addItemsToCart(ProductListPage.java:24)
+org.example.carina.demo.HelloWorld.login(HelloWorld.java:33)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

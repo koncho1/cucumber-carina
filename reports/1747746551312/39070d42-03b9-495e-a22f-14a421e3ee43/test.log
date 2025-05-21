@@ -1,5 +1,0 @@
-[2025-05-20 01:09:11] [3] [WARN] Reporting disabled: using no op test run registrar
-[2025-05-20 01:09:11] [3] [INFO] TEST [untitled - login] STARTED at [15:09:11 2025-05-20]
-[2025-05-20 01:09:11] [3] [INFO] Starting driver session...
-[2025-05-20 01:09:12] [3] [INFO] Driver session started.
-[2025-05-20 01:09:12] [3] [INFO] TEST [untitled - login] PASSED at [15:09:12 2025-05-20]
