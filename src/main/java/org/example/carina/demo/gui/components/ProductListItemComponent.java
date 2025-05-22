@@ -8,13 +8,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProductListItemComponent extends AbstractUIObject {
 
-    @FindBy(xpath = "//div[contains(@class,'inventory_item_name')]")
+    @FindBy(xpath = ".//div[contains(@class,'inventory_item_name ')]")
     private ExtendedWebElement itemNameText;
 
-    @FindBy(xpath = "//div[contains(@class,'inventory_item_price')]")
+    @FindBy(xpath = ".//div[contains(@class,'inventory_item_price')]")
     private ExtendedWebElement itemPrice;
 
-    @FindBy(xpath = "//button[contains(@id,'add-to-cart')]")
+    @FindBy(xpath = ".//button[contains(@id,'add-to-cart')]")
     private ExtendedWebElement addToCartButton;
 
     public void addItemToCart() {
@@ -26,6 +26,6 @@ public class ProductListItemComponent extends AbstractUIObject {
     }
 
     public ProductListItemComponent(WebDriver driver, SearchContext searchContext) {
-        super(driver);
+        super(driver, searchContext);
     }
 }
