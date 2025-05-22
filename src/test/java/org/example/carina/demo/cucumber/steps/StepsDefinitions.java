@@ -51,16 +51,16 @@ public class StepsDefinitions extends AbstractTest {
         YourCartPage yourCartPage = new YourCartPage(getDriver());
         Assert.assertTrue(yourCartPage.isPageOpened(), "There was a problem with opening Your Cart page");
         CheckoutInformationPage checkoutInformationPage = yourCartPage.goToCheckoutInformationPage();
-        Assert.assertTrue(checkoutInformationPage.isPageOpened());
+        Assert.assertTrue(checkoutInformationPage.isPageOpened(),"There was a problem with opening Checkout Information page");
         CheckoutOverviewPage checkoutOverviewPage = checkoutInformationPage.fillOutForm(user.getFirstName(), user.getLastName(), user.getZipCode());
-        Assert.assertTrue(checkoutOverviewPage.isPageOpened());
+        Assert.assertTrue(checkoutOverviewPage.isPageOpened(),"There was a problem with opening Checkout Overview page");
         checkoutOverviewPage.finishOrdering();
     }
 
     @Then("checkout is succesful")
     public void checkout_is_successful() {
         CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(getDriver());
-        Assert.assertTrue(checkoutCompletePage.isPageOpened());
+        Assert.assertTrue(checkoutCompletePage.isPageOpened(),"There was a problem with opening Checkout Complete page");
     }
 
 }
