@@ -14,7 +14,7 @@ target/
 .idea
 
 /reports
-/reports/emailable-report.html
+/reports/
 
 /src/main/resources
 
