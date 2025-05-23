@@ -5,3 +5,9 @@ Feature: Is checkout feature working correctly?
     And adds products to cart
     And finishes checkout
     Then checkout is succesful
+
+  Scenario: Visual user checks out
+    Given user "visual_user" logs in with valid credentials
+    And adds products to cart
+    And finishes checkout
+    Then checkout is succesful

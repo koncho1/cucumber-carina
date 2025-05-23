@@ -4,7 +4,6 @@ import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
-import org.example.carina.demo.gui.components.ProductListItemComponent;
 import org.example.carina.demo.gui.components.TopMenuComponent;
 import org.example.carina.demo.models.Order;
 import org.openqa.selenium.WebDriver;
